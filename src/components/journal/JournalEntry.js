@@ -10,7 +10,8 @@ export const JournalEntry = ({ id, date, title, body, url }) => {
   const { notes } = useSelector((state) => state.notes);
 
   const handleEntryClick = (e) => {
-    const note = notes.find((note) => note.id == id);
+    e.preventDefault();
+    const note = notes.find((note) => note.id === id);
     dispatch(activeNote(id, note));
 
     // Otra forma

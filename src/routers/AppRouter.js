@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
+import { HashRouter as Router, Switch, Redirect } from "react-router-dom";
 import { JournalScreen } from "../components/journal/JournalScreen";
 import { AuthRouter } from "./AuthRouter";
 import { firebase } from "../firebase/firebase-config";
